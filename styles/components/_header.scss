@@ -1,0 +1,119 @@
+header {
+  background: url(../../assets/img/01.272.07.005.jpg) center/cover;
+  height: 100vh;
+  color: $color-white;
+  font-family: $font-1;
+  position: relative;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+  }
+
+  nav {
+    // position: fixed;
+    // right: 0;
+    ul {
+      perspective: 300px;
+      margin: 20px;
+      li {
+        list-style: none;
+        transform: rotatey(45deg) scaleX(1.3);
+        transition: 0.3s;
+        transform-origin: left;
+        &:hover {
+          transform: rotatey(3deg);
+        }
+      }
+      &:hover li:not(:hover) {
+        opacity: 0.3;
+      }
+    }
+    a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: var(--white);
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.header-container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header-text-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.header-text-container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat (2, 1r);
+  grid-template-areas:
+    "txt"
+    "ctrl";
+  gap: 30px;
+}
+
+.burger-menu-btn {
+  width: 30px;
+  height: 30px;
+  background: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url(../../assets/icons/burger.svg) right/cover;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.offcanvas-body {
+  a {
+    text-decoration: none;
+    color: $color-grey;
+    &:hover {
+      color: $color-black;
+      font-size: 1.4rem;
+    }
+    &:visited,
+    &:active,
+    &:focus {
+      outline: none;
+      border: none;
+      transition: none;
+    }
+  }
+}
+
+.offcanvas-header h5 {
+  color: $color-black !important;
+  font-size: 1.5rem;
+}
+
+#header-p {
+  grid-area: txt;
+}
+
+#header-carroussel-controler {
+  grid-area: ctrl;
+}

@@ -1,5 +1,5 @@
 header {
-  background: url(../../assets/img/01.272.07.005.jpg) center/cover;
+  background: url('#{$rootpath}/assets/img/01.272.07.005.jpg') center/cover;
   height: 100vh;
   color: $color-white;
   font-family: $font-1;
@@ -17,8 +17,6 @@ header {
   }
 
   nav {
-    // position: fixed;
-    // right: 0;
     ul {
       perspective: 300px;
       margin: 20px;
@@ -81,7 +79,7 @@ header {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: url(../../assets/icons/burger.svg) right/cover;
+  background: url('#{$rootpath}/assets/icons/burger.svg') right/cover;
   &:hover {
     transform: scale(1.2);
   }

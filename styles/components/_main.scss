@@ -32,7 +32,7 @@ main {
   }
 
   .card {
-    margin: 50px 0;
+    margin: 50px 0 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (2, 1fr );
@@ -50,21 +50,103 @@ main {
     grid-area: img;
   }
   .card-text {
-    margin: 30px 20px;
+    margin: 30px 20px 0;
     grid-area: txt;
     display: flex;
     flex-direction: column;
   }
 
   #card-img-container1 {
-    .img1-container {
-      width: 70%;
+    // background: rgba(168, 167, 167, 0.815);
+    height: 400px;
+    position: relative;
+    #section1-img1-container {
+      margin: 80px 0 20px;
+      height: 300px;
+      overflow: hidden;
       img {
-        
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        margin-left: 10px;
+        filter: grayscale(1) opacity(0.5);
       }
     }
-    .img2-container {
-      height: 90%;
+    #section1-img2-container {
+      height: 100%;
+      width: 70%;
+      overflow: hidden;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+      }
+    }
+  }
+
+  #card-img-container2 {
+    // background: rgba(168, 167, 167, 0.815);
+    height: 400px;
+    position: relative;
+    #section2-img1-container {
+      margin: 80px 0 20px;
+      height: 300px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        margin-left: 10px;
+        filter: grayscale(1) opacity(0.5);
+      }
+    }
+    #section2-img2-container {
+      width: 90%;
+      overflow: hidden;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      img {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+      }
+    }
+  }
+
+  #card-img-container3 {
+    background: rgba(168, 167, 167, 0.815);
+    height: 400px;
+    position: relative;
+    #section3-img1-container {
+      margin: 80px 0 20px;
+      height: 300px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+        margin-left: 10px;
+        filter: grayscale(1) opacity(0.5);
+      }
+    }
+    #section3-img2-container {
+      height: 100%;
+      width: 70%;
+      overflow: hidden;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 100%;
+        object-fit: cover;
+        align-self: center;
+      }
     }
   }
 

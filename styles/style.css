@@ -1,6 +1,6 @@
 @font-face {
   font-family: "font-1";
-  src: url(../../assets/fonts/Roboto-Regular.ttf);
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 header {
-  background: url(../../assets/img/01.272.07.005.jpg) center/cover;
+  background: url("../../assets/img/01.272.07.005.jpg") center/cover;
   height: 100vh;
   color: whitesmoke;
   font-family: "font-1", sans-serif;
@@ -121,7 +121,7 @@ header nav a:hover {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: url(../../assets/icons/burger.svg) right/cover;
+  background: url("../../assets/icons/burger.svg") right/cover;
 }
 
 .burger-menu-btn:hover {
@@ -201,7 +201,7 @@ main a:hover::after {
 }
 
 main .card {
-  margin: 50px 0;
+  margin: 50px 0 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -223,7 +223,7 @@ main .card-img-container {
 }
 
 main .card-text {
-  margin: 30px 20px;
+  margin: 30px 20px 0;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: txt;
@@ -236,11 +236,130 @@ main .card-text {
           flex-direction: column;
 }
 
-main #card-img-container1 .img1-container {
-  width: 70%;
+main #card-img-container1 {
+  height: 400px;
+  position: relative;
 }
 
-main #card-img-container1 .img2-container {
-  height: 90%;
+main #card-img-container1 #section1-img1-container {
+  margin: 80px 0 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+main #card-img-container1 #section1-img1-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  -webkit-filter: grayscale(1) opacity(0.5);
+          filter: grayscale(1) opacity(0.5);
+}
+
+main #card-img-container1 #section1-img2-container {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main #card-img-container1 #section1-img2-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main #card-img-container2 {
+  height: 400px;
+  position: relative;
+}
+
+main #card-img-container2 #section2-img1-container {
+  margin: 80px 0 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+main #card-img-container2 #section2-img1-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  -webkit-filter: grayscale(1) opacity(0.5);
+          filter: grayscale(1) opacity(0.5);
+}
+
+main #card-img-container2 #section2-img2-container {
+  width: 90%;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+main #card-img-container2 #section2-img2-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main #card-img-container3 {
+  background: rgba(168, 167, 167, 0.815);
+  height: 400px;
+  position: relative;
+}
+
+main #card-img-container3 #section3-img1-container {
+  margin: 80px 0 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+main #card-img-container3 #section3-img1-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  -webkit-filter: grayscale(1) opacity(0.5);
+          filter: grayscale(1) opacity(0.5);
+}
+
+main #card-img-container3 #section3-img2-container {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main #card-img-container3 #section3-img2-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "components/_settings.scss",
+        "pages/_contact.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

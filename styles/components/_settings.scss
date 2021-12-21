@@ -8,26 +8,9 @@ $color-white: whitesmoke;
 $color-black: rgb(51, 51, 51);
 $color-grey: rgb(140, 140, 140);
 $color-grey-light: rgba(179, 179, 179, 0.374);
-$color-cyan: cyan;
+$color-cyan-bckgrnd: #00cdaa;
+$color-cyan-text: #22d4b5;
 $color-darkcyan: darkcyan;
-
-@mixin flexCenterChild {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flexColCenter() {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-@mixin grid4Col($col1, $col2, $col3, $col4) {
-  display: grid;
-  grid-template-columns: $col1 $col2 $col3 $col4;
-}
 
 * {
   margin: 0;

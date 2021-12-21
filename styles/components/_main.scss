@@ -1,0 +1,71 @@
+main {
+  font-family: $font-1;
+  color: $color-black;
+
+  p {
+    margin: 20px 0 20px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-cyan-text;
+    color: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    &::after {
+      content: "";
+      height: 3px;
+      width: 15px;
+      position: absolute;
+      background: $color-cyan-text;
+      top: 15px;
+      right: -25px;
+      transition: 0.5s ease;
+    }
+    &:hover::after {
+      width: 45px;
+      right: -55px;
+    }
+  }
+
+  .card {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (2, 1fr );
+    grid-template-areas: 
+      "img"
+      "txt"
+    ;
+    h3 {
+      font-weight: bolder;
+    }
+  }
+
+  .card-img-container {
+    margin: 30px 0;
+    grid-area: img;
+  }
+  .card-text {
+    margin: 30px 20px;
+    grid-area: txt;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #card-img-container1 {
+    .img1-container {
+      width: 70%;
+      img {
+        
+      }
+    }
+    .img2-container {
+      height: 90%;
+    }
+  }
+
+}

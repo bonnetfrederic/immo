@@ -1,5 +1,5 @@
 header {
-  background: url('#{$rootpath}/assets/img/01.272.07.005.jpg') center/cover;
+  // background: url('#{$rootpath}/assets/img/01.272.07.005.jpg') center/cover;
   height: 100vh;
   color: $color-white;
   font-family: $font-1;
@@ -46,6 +46,19 @@ header {
         color: $color-black;
       }
     }
+  }
+}
+
+.carousel-item {
+  img {
+    height: 100vh;
+  }
+}
+
+.carousel-caption {
+  z-index: 1;
+  p {
+    z-index: 1;
   }
 }
 
@@ -119,6 +132,53 @@ header {
 .offcanvas-header h5 {
   color: $color-black !important;
   font-size: 1.5rem;
+}
+
+#carouselSlidesOnly {
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#carouselFade {
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#carousel-img1 {
+  background: url('#{$rootpath}/assets/img/01.272.07.005.jpg') center/cover;
+}
+#carousel-img2 {
+  background: url('#{$rootpath}/assets/img/00.951.11.071a.jpg') center/cover;
+}
+#carousel-img3 {
+  background: url('#{$rootpath}/assets/img/01.060.11.012.jpg') center/cover;
+}
+#carousel-img4 {
+  background: url('#{$rootpath}/assets/img/00.433.11.014-1-Blue-Slip.jpg') right/cover;
+}
+#carousel-img5 {
+  background: url('#{$rootpath}/assets/img/00.636.11.007.jpg') left/cover;
+}
+#carousel-img6 {
+  background: url('#{$rootpath}/assets/img/00.818.12.180.jpg') center/cover;
+}
+#carousel-img7 {
+  background: url('#{$rootpath}/assets/img/01.047.11.002b.jpg') center/cover;
+}
+#carousel-img8 {
+  background: url('#{$rootpath}/assets/img/01.060.11.012.jpg') center/cover;
+}
+#carousel-img9 {
+  background: url('#{$rootpath}/assets/img/Enclave-at-the-cathedral-3.jpg') bottom/cover;
 }
 
 #header-p {

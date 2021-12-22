@@ -12,7 +12,6 @@
 }
 
 header {
-  background: url("../../assets/img/01.272.07.005.jpg") center/cover;
   height: 100vh;
   color: #eee;
   font-family: "font-1", sans-serif;
@@ -69,6 +68,18 @@ header nav a:hover {
 
 header nav a h5 {
   color: #333333;
+}
+
+.carousel-item img {
+  height: 100vh;
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+.carousel-caption p {
+  z-index: 1;
 }
 
 .logo {
@@ -166,6 +177,62 @@ header nav a h5 {
   font-size: 1.5rem;
 }
 
+#carouselSlidesOnly {
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#carouselFade {
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#carousel-img1 {
+  background: url("../../assets/img/01.272.07.005.jpg") center/cover;
+}
+
+#carousel-img2 {
+  background: url("../../assets/img/00.951.11.071a.jpg") center/cover;
+}
+
+#carousel-img3 {
+  background: url("../../assets/img/01.060.11.012.jpg") center/cover;
+}
+
+#carousel-img4 {
+  background: url("../../assets/img/00.433.11.014-1-Blue-Slip.jpg") right/cover;
+}
+
+#carousel-img5 {
+  background: url("../../assets/img/00.636.11.007.jpg") left/cover;
+}
+
+#carousel-img6 {
+  background: url("../../assets/img/00.818.12.180.jpg") center/cover;
+}
+
+#carousel-img7 {
+  background: url("../../assets/img/01.047.11.002b.jpg") center/cover;
+}
+
+#carousel-img8 {
+  background: url("../../assets/img/01.060.11.012.jpg") center/cover;
+}
+
+#carousel-img9 {
+  background: url("../../assets/img/Enclave-at-the-cathedral-3.jpg") bottom/cover;
+}
+
 #header-p {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -198,6 +265,10 @@ main a {
   position: relative;
 }
 
+main a:hover {
+  color: #22d4b5;
+}
+
 main a::after {
   content: "";
   height: 2px;
@@ -216,6 +287,7 @@ main a:hover::after {
 }
 
 main .card {
+  border: none;
   margin: 50px 0 0;
   display: -ms-grid;
   display: grid;
@@ -406,6 +478,7 @@ footer {
   font-family: "font-1", sans-serif;
   color: #333333;
   border-top: 2px solid rgba(179, 179, 179, 0.374);
+  padding-top: 10px;
 }
 
 footer ul li {
@@ -474,6 +547,29 @@ footer .links-ul li:first-child > a {
 footer .links-ul li:first-child > a:hover {
   text-decoration: none;
   padding-left: 0px;
+}
+
+footer .copyright {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .copyright p {
+  margin: auto 0;
+  color: #8c8c8c;
+  font-size: 0.8rem;
 }
 
 footer #footer-logo {

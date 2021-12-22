@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Immo</title>
   <link rel="stylesheet" href="./styles/style.css">
 
   <!-- font awesome -->
@@ -20,6 +20,151 @@
 
   <header>
 
+    <!-- Bootstrap 'SlidesOnly' Carousel -->
+    <!-- <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="carousel-img1" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img2" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img3" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img4" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img5" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img6" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img7" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img8" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img9" onerror='this.style.display = "none"' class="d-block w-100" alt="">
+        </div>
+      </div>
+    </div> -->
+    <!-- END OF Bootstrap 'SlidesOnly' carousel -->
+
+    <!-- Bootstrap 'Cross-fade' carousel -->
+    <!-- <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="carousel-img1" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img2" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img3" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img4" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img5" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img6" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img7" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img8" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img9" onerror='this.style.display = "none"' class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+    <!-- END OF Bootstrap 'Cross-fade' carousel -->
+
+    <!-- Bootstrap 'Cross-fade' carousel with 'Captions'-->
+    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="carousel-img1" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Sendero Verde: The World's Largest Fully Affordable Passive House Building.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img2" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img3" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img4" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img5" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img6" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img7" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img8" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img id="carousel-img9" onerror='this.style.display = "none"' class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- END OF Bootstrap 'Cross-fade' carousel -->
+
     <!-- Bootstrap Burger Menu with Toggle right offcanvas -->
     <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
       aria-controls="offcanvasRight"></button> -->
@@ -28,7 +173,9 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-        <a href="#"><h5 id="offcanvasRightLabel">Home</h5></a>
+        <a href="#">
+          <h5 id="offcanvasRightLabel">Home</h5>
+        </a>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -63,7 +210,8 @@
       <div class="header-text-container">
         <h2>We are committed to sustainable living.</h2>
         <div class="header-text-container-grid">
-          <p id="header-p">Sendero Verde: The World's Largest Fully Affordable Passive House Building</p>
+          <!-- <p id="header-p">Sendero Verde: The World's Largest Fully Affordable Passive House Building</p> remplacé par le <p> du carousel caption-->
+          <p id="header-p"></p>
           <div id="header-carrousel-controler" class="carrousel-control">
             <img src="./assets/img/left-arrow.svg" alt="left arrow">
             <span>02/09</span>
@@ -87,7 +235,9 @@
         </div>
         <div id="card-text1" class="card-text">
           <h3>We are achitects, planners, and designers out to change the world.</h3>
-          <p>At the core of our practice is the idea that the cities are the incubators of our greatest achievements, and the best hope for a sustainable future. We believe that architecture and design matter, and that through the application of our skills, passion,talent, and hard work we can make a difference in the world.</p>
+          <p>At the core of our practice is the idea that the cities are the incubators of our greatest achievements,
+            and the best hope for a sustainable future. We believe that architecture and design matter, and that through
+            the application of our skills, passion,talent, and hard work we can make a difference in the world.</p>
           <p><a href="">Learn more about us</a></p>
         </div>
       </div>
@@ -104,7 +254,9 @@
         </div>
         <div id="card-text2" class="card-text">
           <h3>Our work straddles the boundary between architecture, urban design and public policy.</h3>
-          <p>Recent solutions include a new to affordable housing at Sendero Verde in Harlem, a creative approach to the reuse of existing infrastructure at Pier 57 on Manhattan's West Side, and the creation of new sustainibility standards for a major development partner.</p>
+          <p>Recent solutions include a new to affordable housing at Sendero Verde in Harlem, a creative approach to the
+            reuse of existing infrastructure at Pier 57 on Manhattan's West Side, and the creation of new sustainibility
+            standards for a major development partner.</p>
           <p><a href="">Sendero Verde, a new concept in urban affordable housing</a></p>
         </div>
       </div>
@@ -121,7 +273,10 @@
         </div>
         <div id="card-text3" class="card-text">
           <h3>We create world-class architecture.</h3>
-          <p>Handel Architects-designed projects received over 250 design awards, including Honor Awards from the AIA and Global Awards for Excellence from the Urban Land Institute (ULI).<br><br>Our work appears regularly in both  mainstream and industry specific publication. Feature articles on Handel Architects-designed projects have appeared in the Atlantic, Architectural Record and Interior Design Magazine.</p>
+          <p>Handel Architects-designed projects received over 250 design awards, including Honor Awards from the AIA
+            and Global Awards for Excellence from the Urban Land Institute (ULI).<br><br>Our work appears regularly in
+            both mainstream and industry specific publication. Feature articles on Handel Architects-designed projects
+            have appeared in the Atlantic, Architectural Record and Interior Design Magazine.</p>
           <p><a href="">National September 11 Memorial</a>
             <br>
             <a href="">Dream Downtown Hotel</a>
@@ -143,7 +298,7 @@
             <p>Finalist, Large Health + Wellness - NYXxDESIGN Awards | Inspir Carnegie Hill</p>
           </div>
           <div class="award-card">
-            <p>Finalist,  Outdoor Space - NYC-DESIGN Awards | Two Blue Slip, Greenpoint Landing</p>
+            <p>Finalist, Outdoor Space - NYC-DESIGN Awards | Two Blue Slip, Greenpoint Landing</p>
           </div>
           <div class="award-card">
             <p>2021 Public Use Project of the Year - CIBSE Building Performance Awards |The House at Cornell Tech</p>
@@ -258,7 +413,9 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
 
   <!-- JS local -->
   <!-- <script src="./js/index.js"></script> -->

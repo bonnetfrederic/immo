@@ -11,17 +11,17 @@ main {
   a {
     text-decoration: none;
     color: $color-cyan-text;
-    color: pointer;
+    cursor: pointer;
     font-weight: 600;
     letter-spacing: 2px;
     position: relative;
     &::after {
       content: "";
-      height: 3px;
+      height: 2px;
       width: 15px;
       position: absolute;
       background: $color-cyan-text;
-      top: 15px;
+      bottom: 2px;
       right: -25px;
       transition: 0.5s ease;
     }
@@ -54,6 +54,27 @@ main {
     grid-area: txt;
     display: flex;
     flex-direction: column;
+  }
+
+  .awards-container {
+    background: $color-cyan-text;
+    color: $color-white;
+    padding: 50px 40px 30px;
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+    }
+    a {
+      color: $color-white;
+      &::after {
+        background: $color-white;
+      }
+    }
+    .award-card {
+      border-bottom: 1px solid rgba(238, 238, 238, 0.521);
+      margin: 40px 0 30px;
+      padding: 0 0 15px;
+    }
   }
 
   #card-img-container1 {
@@ -119,7 +140,7 @@ main {
   }
 
   #card-img-container3 {
-    background: rgba(168, 167, 167, 0.815);
+    // background: rgba(168, 167, 167, 0.815);
     height: 400px;
     position: relative;
     #section3-img1-container {

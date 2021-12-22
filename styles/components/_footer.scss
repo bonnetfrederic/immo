@@ -1,0 +1,91 @@
+footer {
+  font-family: $font-1;
+  color: $color-black;
+  border-top: 2px solid $color-grey-light;
+
+  ul {
+    li {
+      list-style: none;
+      margin: 7px 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-grey;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 90% 5%;
+    // grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "logo"
+      "links"
+      "copyright"
+    ;
+  }
+
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+      "lnk1 lnk2"
+      "lnk3 lnk4"
+    ;
+  }
+
+  .footer-links-card {
+    margin: 20px 0;
+  }
+
+  .links-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    li > a:hover {
+      // text-decoration: underline dotted $color-black;
+      padding-left: 10px;
+      color: $color-black;
+    }
+    li:first-child > a {
+      color: $color-black;
+      font-size: 1.3rem;
+      font-weight: 500;
+      &:hover {
+        text-decoration: none;
+      padding-left: 0px;
+      }
+    }
+  }
+
+  #footer-logo {
+    grid-area: logo;
+  }
+
+  #footer-links-container {
+    grid-area: links;
+  }
+
+  #footer-links-card1{
+    grid-area: lnk1;
+  }
+  #footer-links-card2{
+    grid-area: lnk2;
+  }
+  #footer-links-card3{
+    grid-area: lnk3;
+  }
+  #footer-links-card4{
+    grid-area: lnk4;
+  }
+  #copyright {
+    grid-area: copyright;
+  }
+
+}

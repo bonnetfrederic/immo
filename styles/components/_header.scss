@@ -199,33 +199,43 @@ header {
 }
 
 #carousel-img1 {
-  background: url("#{$rootpath}/assets/img/01.272.07.005.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.272.07.005.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
+
 #carousel-img2 {
-  background: url("#{$rootpath}/assets/img/00.951.11.071a.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/00.951.11.071a.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img3 {
-  background: url("#{$rootpath}/assets/img/01.060.11.012.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.060.11.012.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img4 {
-  background: url("#{$rootpath}/assets/img/00.433.11.014-1-Blue-Slip.jpg")
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/00.433.11.014-1-Blue-Slip.jpg")
     right/cover;
+    animation: rearzoom 3s forwards;
 }
 #carousel-img5 {
-  background: url("#{$rootpath}/assets/img/00.636.11.007.jpg") left/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/00.636.11.007.jpg") left/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img6 {
-  background: url("#{$rootpath}/assets/img/00.818.12.180.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/00.818.12.180.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img7 {
-  background: url("#{$rootpath}/assets/img/01.047.11.002b.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.047.11.002b.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img8 {
-  background: url("#{$rootpath}/assets/img/01.060.11.012.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.060.11.012.jpg") center/cover;
+  animation: rearzoom 3s forwards;
 }
 #carousel-img9 {
-  background: url("#{$rootpath}/assets/img/Enclave-at-the-cathedral-3.jpg")
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/Enclave-at-the-cathedral-3.jpg")
     bottom/cover;
+    animation: rearzoom 3s forwards;
 }
 
 #header-p {
@@ -235,4 +245,13 @@ header {
 #header-carroussel-controler {
   grid-area: ctrl;
   margin-bottom: -50px;
+}
+
+@keyframes rearzoom {
+  0% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

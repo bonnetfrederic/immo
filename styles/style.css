@@ -89,7 +89,7 @@ header nav a h5 {
 .logo img {
   width: 90%;
   min-width: 230px;
-  max-width: 500px;
+  max-width: 350px;
 }
 
 .header-container {
@@ -111,7 +111,7 @@ header nav a h5 {
 }
 
 .header-text-container {
-  height: 300px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,9 +119,9 @@ header nav a h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: start;
@@ -175,6 +175,43 @@ header nav a h5 {
 .offcanvas-header h5 {
   color: #333333 !important;
   font-size: 1.5rem;
+}
+
+.carousel-caption {
+  bottom: 40px !important;
+  left: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 30px !important;
+  color: #eee !important;
+  text-align: left !important;
+}
+
+.carousel-caption p {
+  text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: static !important;
+  z-index: 1;
+  display: inline-block !important;
+  width: 80px !important;
+  height: 10px !important;
+  background: none;
+  border: 0;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.carousNum {
+  position: absolute;
+  bottom: -22px;
+  left: 90px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 #carouselSlidesOnly {
@@ -243,6 +280,7 @@ header nav a h5 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: ctrl;
+  margin-bottom: -50px;
 }
 
 main {

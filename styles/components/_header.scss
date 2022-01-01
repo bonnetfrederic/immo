@@ -92,7 +92,7 @@ header {
 .header-text-container-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat (2, 1r);
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "txt"
     "ctrl";
@@ -139,7 +139,7 @@ header {
   // position: absolute;
   // right: 15%;
   bottom: 40px !important;
-  top: 580px !important;
+  top: 77% !important;
   left: 20px !important;
   padding-top: 0 !important;
   padding-bottom: 30px !important;

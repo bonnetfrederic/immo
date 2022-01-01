@@ -157,8 +157,8 @@ header nav a h5 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: repeat 2, 1r;
-      grid-template-rows: repeat 2, 1r;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-template-areas: "txt" "ctrl";
   gap: 30px;
 }
@@ -202,7 +202,7 @@ header nav a h5 {
 
 .carousel-caption {
   bottom: 40px !important;
-  top: 580px !important;
+  top: 77% !important;
   left: 20px !important;
   padding-top: 0 !important;
   padding-bottom: 30px !important;

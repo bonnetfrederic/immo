@@ -16,6 +16,8 @@
 
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -379,29 +381,29 @@
         <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img id="newsCarousel-img1" onerror='this.style.display = "none"' class="d-block w-100" alt="" src="./assets/img/Lobello-Ryan-1.jpg">
+            <img id="newsCarousel-img1" onerror='this.style.display = "none"' class="d-block" alt="" src="./assets/img/Lobello-Ryan-1.jpg">
             <div class="carousel-caption d-block">
-                  <p>Senior Associate Ryan Lobello to present at AIA Conference on Arhitecture 2021</p>
-                  <a href="">Read More</a>
-                </div>
+              <p>Senior Associate Ryan Lobello to present at AIA Conference on Arhitecture 2021</p>
+              <a href="">Read More</a>
+            </div>
           </div>
           <div class="carousel-item">
-            <img id="newsCarousel-img2" onerror='this.style.display = "none"' class="d-block w-100" alt="" src="./assets/img/01.199.12.034.no.rights-crop.jpg">
+            <img id="newsCarousel-img2" onerror='this.style.display = "none"' class="d-block" alt="" src="./assets/img/01.199.12.034.no.rights-crop.jpg">
             <div class="carousel-caption d-block">
-                  <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
-                  <a href="">Read More</a>
-                </div>
+              <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Read More</a>
+            </div>
           </div>
           <div class="carousel-item">
-            <img id="newsCarousel-img3" onerror='this.style.display = "none"' class="d-block w-100" alt="" src="./assets/img/00.526.11.055.jpg">
+            <img id="newsCarousel-img3" onerror='this.style.display = "none"' class="d-block" alt="" src="./assets/img/00.526.11.055.jpg">
             <div class="carousel-caption d-block">
-                  <p>Lorem Ipsum: Lorem ipsum, consectetur adipisicing elit.</p>
-                  <a href="">Read More</a>
-                </div>
+              <p>Lorem Ipsum: Lorem ipsum, consectetur adipisicing elit.</p>
+              <a href="">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- END OF Bootstrap 'SlidesOnly' carousel -->
+        </div>
+        <!-- END OF Bootstrap 'SlidesOnly' carousel -->
 
         <!-- no-carousel version -->
         <!-- <div id="news-carrousel">
@@ -427,6 +429,43 @@
             <a href="">Read More</a>
           </div>
         </div> -->
+      
+        <!-- 'OwlCarousel' version with stagePadding-->
+        <!-- <script type="text/javascript">
+          $(function() {
+            $('.owl-carousel').owlCarousel({
+              margin: 10,
+              loop: true,
+              items: 1,
+              stagePadding: 100
+            });
+          });
+        </script>
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="./assets/img/Lobello-Ryan-1.jpg" />
+            <div class="carousel-caption d-block">
+              <p>Senior Associate Ryan Lobello to present at AIA Conference on Arhitecture 2021</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/img/01.199.12.034.no.rights-crop.jpg" />
+            <div class="carousel-caption d-block">
+              <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/img/00.526.11.055.jpg" />
+            <div class="carousel-caption d-block">
+              <p>Lorem Ipsum: Lorem ipsum, consectetur adipisicing elit.</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- End Of 'OwlCarousel' version with stagePadding-->
+
       </div>
     </div>
     <div id="section6">

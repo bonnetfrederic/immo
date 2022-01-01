@@ -19,6 +19,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ul {
@@ -455,13 +459,6 @@ main .awards-container .award-card {
   padding: 0 0 15px;
 }
 
-main .news-container {
-  padding: 80px 20px 50px;
-  height: 700px;
-  background: #001828;
-  color: #eee;
-}
-
 main #card-img-container1 {
   height: 400px;
   position: relative;
@@ -589,19 +586,151 @@ main #card-img-container3 #section3-img2-container img {
 }
 
 main #section5 img {
+  margin: 30px auto;
+  width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
 
+main #section5 .news-container {
+  padding: 100px 20px 50px;
+  height: 700px;
+  background: #001828;
+  color: #eee;
+}
+
+main #section5 .owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+main #section5 .owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+main #section5 .owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+main #section5 .owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+main #section5 .owl-carousel .owl-wrapper,
+main #section5 .owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+main #section5 .owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+main #section5 .owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+main #section5 .owl-carousel .owl-nav.disabled,
+main #section5 .owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+main #section5 .owl-carousel .owl-nav .owl-prev,
+main #section5 .owl-carousel .owl-nav .owl-next,
+main #section5 .owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main #section5 .owl-carousel .owl-nav button.owl-prev,
+main #section5 .owl-carousel .owl-nav button.owl-next,
+main #section5 .owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+main #section5 .owl-carousel.owl-loaded {
+  display: block;
+}
+
+main #section5 .owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+main #section5 .owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+main #section5 .owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+main #section5 .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+main #section5 .owl-carousel.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+main #section5 .owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+main #section5 .owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
 main #section5 .carousel-item img {
-  height: 500px;
+  height: 450px;
 }
 
 main #section5 .carousel-caption {
-  bottom: 40px !important;
-  top: 330px !important;
-  left: 20px !important;
+  width: 70%;
+  bottom: 20px !important;
+  top: 310px !important;
+  left: 60px !important;
   padding-top: 0 !important;
   padding-bottom: 30px !important;
   color: #eee !important;
@@ -613,14 +742,6 @@ main #section5 .carousel-caption p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-}
-
-main #section5 #carouselFade {
-  width: 70%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 main #section5 #news-header {
@@ -644,27 +765,6 @@ main #section5 #news-header h3 {
 
 main #section5 #news-header a {
   font-size: 0.9rem;
-}
-
-main #section5 #carousel-img1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/Lobello-Ryan-1.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/Lobello-Ryan-1.jpg") center/cover;
-  -webkit-animation: rearzoom 3s forwards;
-          animation: rearzoom 3s forwards;
-}
-
-main #section5 #carousel-img1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.199.12.034.no.rights-crop.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.199.12.034.no.rights-crop.jpg") center/cover;
-  -webkit-animation: rearzoom 3s forwards;
-          animation: rearzoom 3s forwards;
-}
-
-main #section5 #carousel-img1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.526.11.055.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.526.11.055.jpg") center/cover;
-  -webkit-animation: rearzoom 3s forwards;
-          animation: rearzoom 3s forwards;
 }
 
 main #section6 {

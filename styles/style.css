@@ -3,12 +3,30 @@
   src: url("../../assets/fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: "font-2";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url("../../assets/fonts/MerriweatherSans-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+ul li {
+  list-style: none;
 }
 
 header {
@@ -84,6 +102,7 @@ header nav a h5 {
 
 .logo {
   width: 90%;
+  cursor: pointer;
 }
 
 .logo img {
@@ -436,6 +455,13 @@ main .awards-container .award-card {
   padding: 0 0 15px;
 }
 
+main .news-container {
+  padding: 80px 20px 50px;
+  height: 700px;
+  background: #001828;
+  color: #eee;
+}
+
 main #card-img-container1 {
   height: 400px;
   position: relative;
@@ -560,6 +586,179 @@ main #card-img-container3 #section3-img2-container img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+main #section5 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+main #section5 .carousel-item img {
+  height: 500px;
+}
+
+main #section5 .carousel-caption {
+  bottom: 40px !important;
+  top: 330px !important;
+  left: 20px !important;
+  padding-top: 0 !important;
+  padding-bottom: 30px !important;
+  color: #eee !important;
+  text-align: left !important;
+}
+
+main #section5 .carousel-caption p {
+  text-align: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main #section5 #carouselFade {
+  width: 70%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main #section5 #news-header {
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #section5 #news-header h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+main #section5 #news-header a {
+  font-size: 0.9rem;
+}
+
+main #section5 #carousel-img1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/Lobello-Ryan-1.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/Lobello-Ryan-1.jpg") center/cover;
+  -webkit-animation: rearzoom 3s forwards;
+          animation: rearzoom 3s forwards;
+}
+
+main #section5 #carousel-img1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.199.12.034.no.rights-crop.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.199.12.034.no.rights-crop.jpg") center/cover;
+  -webkit-animation: rearzoom 3s forwards;
+          animation: rearzoom 3s forwards;
+}
+
+main #section5 #carousel-img1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.526.11.055.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.526.11.055.jpg") center/cover;
+  -webkit-animation: rearzoom 3s forwards;
+          animation: rearzoom 3s forwards;
+}
+
+main #section6 {
+  margin: 60px 20px 120px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main #section6 h2 {
+  font-family: "font-3", sans-serif;
+  font-weight: 800;
+}
+
+main #section6 ul {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main #section6 a {
+  font-size: 1rem;
+  letter-spacing: normal;
+  color: #22d4b5;
+  position: relative;
+}
+
+main #section6 a:hover {
+  color: #22d4b5;
+}
+
+main #section6 a::after {
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  background: 0.1rem solid #8c8c8c !important;
+  bottom: -10px;
+  left: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main #section6 a:hover::after {
+  background: 1px solid #22d4b5;
+}
+
+main #section6 #section6-2nd-link {
+  font-size: 1rem;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  position: relative;
+}
+
+main #section6 #section6-2nd-link:hover {
+  color: #22d4b5;
+}
+
+main #section6 #section6-2nd-link::after {
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  position: absolute;
+  background: 0.1rem solid #8c8c8c !important;
+  bottom: -10px;
+  left: 2px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+main #section6 #section6-2nd-link:hover::after {
+  background: 1px solid #22d4b5;
 }
 
 footer {

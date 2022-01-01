@@ -3,8 +3,18 @@ $rootpath: "../..";
   font-family: "font-1";
   src: url('#{$rootpath}/assets/fonts/Roboto-Regular.ttf');
 }
+@font-face {
+  font-family: "font-2";
+  src: url('#{$rootpath}/assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: "font-3";
+  src: url('#{$rootpath}/assets/fonts/MerriweatherSans-Bold.ttf');
+}
 
 $font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+$font-3: "font-3", sans-serif;
 $color-white: #eee;
 $color-black: rgb(51, 51, 51);
 $color-grey: rgb(140, 140, 140);
@@ -12,10 +22,18 @@ $color-grey-light: rgba(179, 179, 179, 0.374);
 $color-cyan-bckgrnd: #00cdaa;
 $color-cyan-text: #22d4b5;
 $color-darkcyan: darkcyan;
+$color-darkblue: #001828;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0 !important;
+  li {
+    list-style: none;
+  }
 }

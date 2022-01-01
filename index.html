@@ -344,9 +344,39 @@
       <div class="news-container">
         <div id="news-header">
           <h3>Recent News</h3>
-          <span><a href="">Learn more about us</a></span>
+          <span><a href="">See all news</a></span>
         </div>
-        <div id="news-carrousel">
+
+        <!-- Bootstrap 'Cross-fade' carousel with 'Captions'-->
+        <div id="newsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img id="newsCarousel-img1" onerror='this.style.display = "none"' class="d-block" src="./assets/img/Lobello-Ryan-1.jpg">
+              <div class="carousel-caption d-block">
+                <p>Senior Associate Ryan Lobello to present at AIA Conference on Arhitecture 2021</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="newsCarousel-img2" onerror='this.style.display = "none"' class="d-block" src="./assets/img/01.199.12.034.no.rights-crop.jpg">
+              <div class="carousel-caption d-block">
+                <p>Lorem Ipsum: Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="newsCarousel-img3" onerror='this.style.display = "none"' class="d-block" src="./assets/img/00.526.11.055.jpg">
+              <div class="carousel-caption d-block">
+                <p>Lorem Ipsum: Lorem ipsum, consectetur adipisicing elit.</p>
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF Bootstrap 'Cross-fade' carousel -->
+
+        <!-- no-carousel version -->
+        <!-- <div id="news-carrousel">
           <div id="news-card1" class="news-card">
             <div id="news-card1-img" class="news-card-img"></div>
             <div id="news-card1-text" class="news-card-text">
@@ -368,15 +398,15 @@
             </div>
             <a href="">Read More</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div id="section6">
       <h2>Handel Architect has a culture of dedication, passion and support.</h2>
       <div id="section6-links">
         <ul>
-          <li><a href="">Learn more about our culture</a></li>
-          <li><a href="">Join our team</a></li>
+          <li><a id="section6-1st-link" href="">Learn more about our culture</a></li>
+          <li><a id="section6-2nd-link" href="">Join our team</a></li>
         </ul>
       </div>
     </div>

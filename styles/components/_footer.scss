@@ -80,10 +80,18 @@ footer {
 
   #footer-logo {
     grid-area: logo;
+    img {
+      @media screen and (max-width: 350px) {
+        width: 80vw;
+      }
+    }
   }
 
   #footer-links-container {
     grid-area: links;
+    @media screen and (max-width: 330px) {
+      display: none !important;
+    }
   }
 
   #footer-links-card1{

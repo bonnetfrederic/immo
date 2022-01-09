@@ -60,6 +60,11 @@ header {
   p {
     z-index: 1;
   }
+  @media screen and (max-width: 350px) {
+    p {
+      font-size: calc(0.7rem + 0.9vw);
+    }
+  }
 }
 
 .logo {
@@ -70,6 +75,12 @@ header {
     min-width: 230px;
     max-width: 350px;
   }
+  @media screen and (max-width: 330px) {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 290px) {
+    display: none;
+  }
 }
 
 .header-container {
@@ -79,6 +90,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 330px) {
+    margin: 0 auto;
+  }
 }
 .header-text-container {
   height: 250px;
@@ -87,6 +101,11 @@ header {
   justify-content: space-between;
   align-content: center;
   align-items: flex-start;
+  @media screen and (max-width: 350px) {
+    h2 {
+      font-size: calc(1.3rem + 0.9vw);
+    }
+  }
 }
 
 .header-text-container-grid {
@@ -94,8 +113,8 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "txt"
-    "ctrl";
+  "txt"
+  "ctrl";
   gap: 30px;
 }
 
@@ -110,6 +129,21 @@ header {
   &:hover {
     transform: scale(1.2);
   }
+  @media screen and (max-width: 290px) {
+    top: 20px;
+    right: 45%;
+  }
+  @media screen and (max-width: 330px) {
+    top: 70px;
+    right: 45%;
+  }
+  @media screen and (min-width: 900px) {
+    visibility: visible;
+  }
+  @media screen and (min-width: 900px) and (max-width: 8000px) {
+    display: none;
+  }
+
 }
 
 .offcanvas-body {
@@ -178,6 +212,45 @@ header {
   left: 90px;
   font-size: 1.2rem;
   font-weight: 300;
+  @media screen and (max-width: 330px) {
+    display: none;
+  }
+}
+
+#navBar {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  min-width: 300px;
+  width: 50vw;
+  max-width: 800px;
+  height: 30px;
+  color: $color-white;
+  background: transparent;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      a {
+        &:hover {
+          font-size: 1.1rem;
+        }
+        &:hover a:not(:hover) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+#navLiSearch {
+  height: 20px;
+  width: 20px;
+  background: url("#{$rootpath}/assets/img/search.svg") center/cover;
 }
 
 #carouselSlidesOnly {
@@ -226,7 +299,7 @@ header {
   animation: rearzoom 3s forwards;
 }
 #carousel-img7 {
-  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.047.11.002b.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.4) 100%), url("#{$rootpath}/assets/img/01.047.11.002.jpg") center/cover;
   animation: rearzoom 3s forwards;
 }
 #carousel-img8 {
@@ -243,9 +316,12 @@ header {
   grid-area: txt;
 }
 
-#header-carroussel-controler {
+#header-carousel-controler {
   grid-area: ctrl;
-  margin-bottom: -50px;
+  // margin-bottom: -50px;
+  @media screen and (max-width: 330px) {
+    display: none !important;
+  }
 }
 
 @keyframes rearzoom {

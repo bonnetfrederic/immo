@@ -33,6 +33,11 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none !important;
+  color: #eee !important;
+}
+
 header {
   height: 100vh;
   color: #eee;
@@ -104,6 +109,12 @@ header nav a h5 {
   z-index: 1;
 }
 
+@media screen and (max-width: 350px) {
+  .carousel-caption p {
+    font-size: calc(0.7rem + 0.9vw);
+  }
+}
+
 .logo {
   width: 90%;
   cursor: pointer;
@@ -113,6 +124,18 @@ header nav a h5 {
   width: 90%;
   min-width: 230px;
   max-width: 350px;
+}
+
+@media screen and (max-width: 330px) {
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .logo {
+    display: none;
+  }
 }
 
 .header-container {
@@ -133,6 +156,12 @@ header nav a h5 {
           align-items: flex-start;
 }
 
+@media screen and (max-width: 330px) {
+  .header-container {
+    margin: 0 auto;
+  }
+}
+
 .header-text-container {
   height: 250px;
   display: -webkit-box;
@@ -150,6 +179,12 @@ header nav a h5 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media screen and (max-width: 350px) {
+  .header-text-container h2 {
+    font-size: calc(1.3rem + 0.9vw);
+  }
 }
 
 .header-text-container-grid {
@@ -176,6 +211,32 @@ header nav a h5 {
 .burger-menu-btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media screen and (max-width: 290px) {
+  .burger-menu-btn {
+    top: 20px;
+    right: 45%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .burger-menu-btn {
+    top: 70px;
+    right: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .burger-menu-btn {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 8000px) {
+  .burger-menu-btn {
+    display: none;
+  }
 }
 
 .offcanvas-body a {
@@ -236,6 +297,55 @@ header nav a h5 {
   left: 90px;
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 330px) {
+  .carousNum {
+    display: none;
+  }
+}
+
+#navBar {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  min-width: 300px;
+  width: 50vw;
+  max-width: 800px;
+  height: 30px;
+  color: #eee;
+  background: transparent;
+}
+
+#navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navBar ul li a:hover {
+  font-size: 1.1rem;
+}
+
+#navBar ul li a:hover a:not(:hover) {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  #navBar {
+    display: none;
+  }
+}
+
+#navLiSearch {
+  height: 20px;
+  width: 20px;
+  background: url("./../assets/img/search.svg") center/cover;
 }
 
 #carouselSlidesOnly {
@@ -301,8 +411,8 @@ header nav a h5 {
 }
 
 #carousel-img7 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.047.11.002b.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.047.11.002b.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.047.11.002.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.047.11.002.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
@@ -322,16 +432,21 @@ header nav a h5 {
 }
 
 #header-p {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: txt;
 }
 
-#header-carroussel-controler {
+#header-carousel-controler {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: ctrl;
-  margin-bottom: -50px;
+}
+
+@media screen and (max-width: 330px) {
+  #header-carousel-controler {
+    display: none !important;
+  }
 }
 
 @-webkit-keyframes rearzoom {
@@ -400,13 +515,6 @@ main a:hover::after {
 main .card {
   border: none;
   margin: 50px 0 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: repeat 2, 1fr;
-      grid-template-rows: repeat 2, 1fr;
-      grid-template-areas: "img" "txt";
 }
 
 main .card h3 {
@@ -414,16 +522,21 @@ main .card h3 {
 }
 
 main .card-img-container {
-  margin: 30px 0;
+  margin: 30px auto;
+  max-width: 600px;
+  max-height: 400px;
+  height: 120vw;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img;
 }
 
 main .card-text {
-  margin: 30px 20px 0;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: txt;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +545,12 @@ main .card-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .awards-container {
@@ -459,14 +578,75 @@ main .awards-container .award-card {
   padding: 0 0 15px;
 }
 
+main #card1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "img txt";
+}
+
+@media screen and (max-width: 1000px) {
+  main #card1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 2, 1fr;
+        grid-template-rows: repeat 2, 1fr;
+        grid-template-areas: "img" "txt";
+  }
+}
+
+main #card2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "txt img";
+}
+
+@media screen and (max-width: 1000px) {
+  main #card2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 2, 1fr;
+        grid-template-rows: repeat 2, 1fr;
+        grid-template-areas: "img" "txt";
+  }
+}
+
+main #card3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "img txt";
+}
+
+@media screen and (max-width: 1000px) {
+  main #card3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 2, 1fr;
+        grid-template-rows: repeat 2, 1fr;
+        grid-template-areas: "img" "txt";
+  }
+}
+
 main #card-img-container1 {
-  height: 400px;
+  max-height: 400px;
+  height: 100vw;
   position: relative;
 }
 
 main #card-img-container1 #section1-img1-container {
-  margin: 80px 0 20px;
-  height: 300px;
+  padding: 80px 0 20px;
+  height: 100vw;
   overflow: hidden;
 }
 
@@ -505,6 +685,7 @@ main #card-img-container1 #section1-img2-container img {
 main #card-img-container2 {
   height: 400px;
   position: relative;
+  overflow: hidden;
 }
 
 main #card-img-container2 #section2-img1-container {
@@ -791,7 +972,10 @@ main #section6 h2 {
 }
 
 main #section6 ul {
-  width: 330px;
+  margin-top: 30px;
+  max-width: 330px;
+  width: 80vw;
+  min-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,12 +983,18 @@ main #section6 ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+main #section6 ul li {
+  margin-bottom: 20px;
 }
 
 main #section6 a {
@@ -965,10 +1155,22 @@ footer #footer-logo {
   grid-area: logo;
 }
 
+@media screen and (max-width: 350px) {
+  footer #footer-logo img {
+    width: 80vw;
+  }
+}
+
 footer #footer-links-container {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: links;
+}
+
+@media screen and (max-width: 330px) {
+  footer #footer-links-container {
+    display: none !important;
+  }
 }
 
 footer #footer-links-card1 {

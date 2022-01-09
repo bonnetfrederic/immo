@@ -553,6 +553,12 @@ main .card-text {
           align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  main .card-text {
+    padding: 0 20px;
+  }
+}
+
 main .awards-container {
   background: #22d4b5;
   color: #eee;
@@ -581,6 +587,9 @@ main .awards-container .award-card {
 main #card1 {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;

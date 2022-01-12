@@ -1,4 +1,4 @@
-$rootpath: "./..";
+$rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because file ignored in .gitignore
 @font-face {
   font-family: "font-1";
   src: url('#{$rootpath}/assets/fonts/Roboto-Regular.ttf');

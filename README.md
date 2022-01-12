@@ -1,7 +1,7 @@
-#Fix logs
+# Fix logs
 
 
-##2022/01/12
+## - 2022/01/12
 
 `$rootpath = "../.."` on local server, but must be `$rootpath = "./.."` on Github
 

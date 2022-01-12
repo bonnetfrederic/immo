@@ -1,4 +1,4 @@
 # mockups & txt files
 *.png
 font.txt
-./styles/components/_rootpathLocal.scss
+_rootpathLocal.scss

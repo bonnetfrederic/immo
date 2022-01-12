@@ -205,7 +205,7 @@ header nav a h5 {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: url("./../assets/icons/burger.svg") right/cover;
+  background: url("../../assets/icons/burger.svg") right/cover;
 }
 
 .burger-menu-btn:hover {
@@ -345,7 +345,7 @@ header nav a h5 {
 #navLiSearch {
   height: 20px;
   width: 20px;
-  background: url("./../assets/img/search.svg") center/cover;
+  background: url("../../assets/img/search.svg") center/cover;
 }
 
 #carouselSlidesOnly {
@@ -369,64 +369,64 @@ header nav a h5 {
 }
 
 #carousel-img1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.272.07.005.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.272.07.005.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.272.07.005.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.272.07.005.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/00.951.11.071a.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/00.951.11.071a.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.951.11.071a.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.951.11.071a.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.060.11.012.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.060.11.012.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.060.11.012.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.060.11.012.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/00.433.11.014-1-Blue-Slip.jpg") right/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/00.433.11.014-1-Blue-Slip.jpg") right/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.433.11.014-1-Blue-Slip.jpg") right/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.433.11.014-1-Blue-Slip.jpg") right/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/00.636.11.007.jpg") left/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/00.636.11.007.jpg") left/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.636.11.007.jpg") left/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.636.11.007.jpg") left/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/00.818.12.180.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/00.818.12.180.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/00.818.12.180.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/00.818.12.180.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img7 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.047.11.002.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.047.11.002.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.047.11.002.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.047.11.002.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img8 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/01.060.11.012.jpg") center/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/01.060.11.012.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/01.060.11.012.jpg") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/01.060.11.012.jpg") center/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
 
 #carousel-img9 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("./../assets/img/Enclave-at-the-cathedral-3.jpg") bottom/cover;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("./../assets/img/Enclave-at-the-cathedral-3.jpg") bottom/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(10%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/Enclave-at-the-cathedral-3.jpg") bottom/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%), url("../../assets/img/Enclave-at-the-cathedral-3.jpg") bottom/cover;
   -webkit-animation: rearzoom 3s forwards;
           animation: rearzoom 3s forwards;
 }
